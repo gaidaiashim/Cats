@@ -11,18 +11,43 @@
         <img class="img-start" src="img/cat-header.png" alt="Grandma cats">
         <span class="text-start">Здесь люди находят четвероногих друзей из приютов</span>
     </header>
-    <main class="container"></main>
-    <footer class="container">
+    <div class="actions">
+        <div class="action_show">
+          <input id="inputShowById" type="text" />
+          <button id="buttonShowById">Показать кота по id</button>
+          <button id="buttonShowAll">Выпустить всех котят</button>
+        </div>
+        <form id="addCat">
+          <input type="number" placeholder="id" name="id" class="inp" />
+          <input type="text" placeholder="name" name="name" class="inp" />
+          <label><input type="checkbox" name="favourite" value="true" class="inp" />Избранный</label>
+          <input
+            type="number"
+            placeholder="rate"
+            name="rate"
+            min="0"
+            max="10"
+            class="inp"
+          />
+          <input type="number" placeholder="age" name="age" class="inp" />
+          <input type="url" placeholder="img_link" name="img_link" class="inp" />
+          <input placeholder="description" name="description" class="inp" />
+          <button type="submit" id="addCatButton">Добавить котика</button>
+        </form>
+      </div>
+    <div class="container"></div>
+        <footer class="container">
         <div>©2022 All rights reserved</div>
         <a href="https://www.friendforpet.ru">www.friendforpet.ru</a>
     </footer>
     
-    <div class="info-block">
-        <div class="info-wrapper">
         </div>
     </div>
-    <script src="cats.js"></script>
-    <script src="cats-2.js"></script>
+ 
+    <script src="/Api.js"></script>
+    <script src="/script.js"></script>
+   
+    
     
 </body>
 </html>
